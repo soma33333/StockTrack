@@ -1,0 +1,165 @@
+.assignment-panel {
+  padding: 2rem;
+  background-color: #f4f8fc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.assignment-panel h2,
+.assignment-panel h3 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.assignment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 350px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #cce0ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.1);
+}
+
+.assignment-form select,
+.assignment-form input {
+  padding: 10px;
+  border: 1px solid #99c2ff;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.assignment-form select:focus,
+.assignment-form input:focus {
+  outline: none;
+  border-color: #0073e6;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+}
+
+.assignment-form button {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #0073e6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assignment-form button:hover {
+  background-color: #005bb5;
+}
+
+.assignment-form button[type="button"] {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+.assignment-form button[type="button"]:hover {
+  background-color: #aaaaaa;
+}
+
+.assignment-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.1);
+}
+
+.assignment-table th,
+.assignment-table td {
+  border: 1px solid #cce0ff;
+  padding: 10px;
+  text-align: center;
+}
+
+.assignment-table th {
+  background-color: #0073e6;
+  color: white;
+}
+
+.assignment-table td {
+  color: #333333;
+}
+
+.assignment-table button {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #0073e6;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.assignment-table button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .assignment-panel {
+    padding: 1rem;
+  }
+
+  .assignment-form {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .assignment-table {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .assignment-table th,
+  .assignment-table td {
+    padding: 8px;
+  }
+
+  .assignment-table button {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .assignment-panel h2,
+  .assignment-panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .assignment-form {
+    padding: 0.75rem;
+  }
+
+  .assignment-table {
+    font-size: 0.8rem;
+  }
+
+  .assignment-table th,
+  .assignment-table td {
+    padding: 6px;
+  }
+
+  .assignment-table button {
+    padding: 4px 6px;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,79 @@
+.history-panel {
+  padding: 2rem;
+  background-color: #f4f8fc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.history-panel h3 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.history-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.1);
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #cce0ff;
+  padding: 10px;
+  text-align: center;
+}
+
+.history-table th {
+  background-color: #0073e6;
+  color: white;
+}
+
+.history-table td {
+  color: #333333;
+}
+
+.status-approved {
+  color: green;
+  font-weight: bold;
+}
+
+.status-rejected {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .history-panel {
+    padding: 1rem;
+  }
+
+  .history-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .history-table {
+    font-size: 0.8rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 6px;
+  }
+}

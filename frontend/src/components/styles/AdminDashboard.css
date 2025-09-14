@@ -1,0 +1,79 @@
+.admin-dashboard {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8fc;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 4px solid #003366;
+}
+
+.admin-header h2,
+.admin-header h3 {
+  margin: 0;
+}
+
+.admin-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.admin-nav button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.admin-nav button:hover {
+  background-color: #005bb5;
+}
+
+.admin-main {
+  padding: 2rem;
+  background-color: #ffffff;
+  min-height: 80vh;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .admin-nav {
+    justify-content: center;
+  }
+
+  .admin-main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-nav button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .admin-header h2,
+  .admin-header h3 {
+    font-size: 1.2rem;
+  }
+}

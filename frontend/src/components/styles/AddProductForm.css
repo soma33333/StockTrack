@@ -1,0 +1,87 @@
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 350px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  background-color: #f9fbff;
+  border: 1px solid #cce0ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.1);
+}
+
+.add-product-form input {
+  padding: 10px;
+  border: 1px solid #99c2ff;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.add-product-form input:focus {
+  outline: none;
+  border-color: #0073e6;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+}
+
+.add-product-form button {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #0073e6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-form button:hover {
+  background-color: #005bb5;
+}
+
+.add-product-form button[type="button"] {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+.add-product-form button[type="button"]:hover {
+  background-color: #aaaaaa;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .add-product-form {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .add-product-form input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .add-product-form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-product-form {
+    margin: 1rem auto;
+    padding: 0.75rem;
+  }
+
+  .add-product-form input {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .add-product-form button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}

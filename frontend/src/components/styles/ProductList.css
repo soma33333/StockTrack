@@ -1,0 +1,127 @@
+.product-list-container {
+  padding: 2rem;
+  background-color: #f4f8fc;
+  min-height: 100vh;
+}
+
+.product-list-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 2rem;
+}
+
+.product-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #cce0ff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card h4 {
+  margin: 0;
+  color: #003366;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.product-card strong {
+  color: #004080;
+}
+
+.product-card-buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-buttons button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0073e6;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.product-card-buttons button:hover {
+  background-color: #005bb5;
+}
+
+.search-bar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  width: 60%;
+  max-width: 400px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .search-bar input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list-title {
+    font-size: 1.5rem;
+  }
+
+  .product-card {
+    padding: 0.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card-buttons button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+}

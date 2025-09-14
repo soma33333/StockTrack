@@ -1,0 +1,55 @@
+.assigned-products-panel {
+    padding: 2rem;
+    background-color: #f4f8fc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .assigned-products-panel h3 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 1rem;
+  }
+  
+  .assigned-products-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 64, 128, 0.1);
+  }
+  
+  .assigned-products-table th,
+  .assigned-products-table td {
+    border: 1px solid #cce0ff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .assigned-products-table th {
+    background-color: #0073e6;
+    color: white;
+  }
+  
+  .assigned-products-table td {
+    color: #333333;
+  }
+  
+  .assigned-products-table button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #0073e6;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assigned-products-table button:hover {
+    background-color: #005bb5;
+  }
+  
